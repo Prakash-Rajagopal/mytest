@@ -1,4 +1,4 @@
-package PHPpackage;
+package com.PHPpackage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;  
