@@ -17,7 +17,7 @@ Webdriver driver;
 ChromeOptions options;
 
 @BeforeMethod
-	public static void beforeMethod() {
+	public void beforeMethod() {
 		// TODO Auto-generated method stub
 		// declaration and instantiation of objects/variables  
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");  
@@ -37,7 +37,7 @@ ChromeOptions options;
 	    driver.get("http://18.223.120.255:8090/index.php");
 	    }
 	@Test
-   public static void About() {
+   public void About() {
 	 // Click on the search text box and send value  
 	    System.out.println("Site Title is: " + driver.getTitle());
 	    driver.findElement(By.linkText("About Us")).click();
@@ -47,7 +47,7 @@ ChromeOptions options;
       }
       
   @AfterMethod
-   public static void afterMethod() {
+   public void afterMethod() {
 	    driver.close();
 	    driver.quit();  
 	    Runtime.getRuntime().exit(0);
