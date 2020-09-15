@@ -1,0 +1,46 @@
+package PHPpackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;  
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+
+
+
+public class PHPclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// declaration and instantiation of objects/variables  
+	    System.setProperty("webdriver.chrome.driver", "chromedriver");  
+	   
+	    //for headless mode
+	   // ChromeOptions options = new ChromeOptions();  
+	    //options.addArguments("window-size=1400,600");
+	   // options.addArguments("--headless");
+	   // options.addArguments("--no-sandbox");
+	   // WebDriver driver=new ChromeDriver(options);
+	   // options.addArguments("--headless");  
+      WebDriver driver=new ChromeDriver();
+	    
+	    //new cromedriver instance
+	    //WebDriver driver=new ChromeDriver();
+	    
+	    //launch PHP website
+	    driver.get("http://3.22.234.74:9090/index.php");
+	    
+	    
+	 // Click on the search text box and send value  
+	    System.out.println("Site Title is: " + driver.getTitle());
+	    driver.findElement(By.linkText("About Us")).click();
+	    
+	    System.out.println("About US Content: " + driver.getPageSource());
+	    System.out.println("Test Successful");
+	    driver.close();
+	    driver.quit();  
+	    Runtime.getRuntime().exit(0);
+	}
+	
+
+}
