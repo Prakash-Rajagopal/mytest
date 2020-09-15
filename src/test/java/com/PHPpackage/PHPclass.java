@@ -47,7 +47,7 @@ ChromeOptions options;
       }
       
   @AfterMethod
-   public ststic void afterMethod() {
+   public static void afterMethod() {
 	    driver.close();
 	    driver.quit();  
 	    Runtime.getRuntime().exit(0);
