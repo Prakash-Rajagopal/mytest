@@ -34,7 +34,7 @@ ChromeOptions options;
 	     driver=new ChromeDriver();
 	    
 	    //launch PHP website
-	    driver.get("http://18.223.120.255:8090/index.php");
+	    driver.get("http://3.22.234.74:9090/index.php");
 	    }
 	@Test
    public void About() {
