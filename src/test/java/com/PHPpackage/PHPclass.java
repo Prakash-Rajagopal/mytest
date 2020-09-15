@@ -13,7 +13,7 @@ import org.testng.annotations.AfterMethod;
 
 
 public class PHPclass {
-Webdriver driver;
+WebDriver driver;
 ChromeOptions options;
 
 @BeforeMethod
